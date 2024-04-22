@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatVerse</string>
+    <string name="ChatVerse">ChatVerse</string>
+    <string name="subject">Your World\nYour ChatVerse</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGN UP</string>
+</resources>
