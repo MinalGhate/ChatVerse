@@ -4,4 +4,9 @@
     <string name="subject">Your World\nYour ChatVerse</string>
     <string name="login">LOGIN</string>
     <string name="signup">SIGN UP</string>
+    <string name="Login">Login</string>
+    <string name="welcome_to_chatverse">Welcome to ChatVerse !</string>
+    <string name="username_mobile_number">Username / Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
 </resources>
