@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#021138" >
+    android:background="#021138">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/just_another_hand"
@@ -19,50 +19,49 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/app_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.131"
+        app:layout_constraintTop_toTopOf="@+id/app_name"
+        app:layout_constraintVertical_bias="0.125"
         app:srcCompat="@drawable/chatverse_logo" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/createaccountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_extrabold"
-        android:text="@string/Login"
-        android:textAlignment="viewStart"
+        android:background="#021138"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/create_account"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:layout_constraintVertical_bias="0.302" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_regular"
         android:text="@string/welcome_to_chatverse"
-        android:textAlignment="viewStart"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccountText"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -71,16 +70,33 @@
         android:layout_height="39dp"
         android:ems="10"
         android:fontFamily="@font/inter_light"
+        android:hint="@string/username"
         android:inputType="text"
-        android:hint="@string/username_mobile_number"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/inter_light"
+        android:hint="@string/mobile_number"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.081" />
 
     <EditText
         android:id="@+id/password"
@@ -90,53 +106,65 @@
         android:fontFamily="@font/inter_light"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textAlignment="viewStart"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:autofillHints="Password"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/username"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        app:layout_constraintVertical_bias="0.086"
-        app:passwordToggleEnabled = "true"
-        app:passwordToggleTint="@color/white"
-        android:scrollbarSize="25dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileno"
+        app:layout_constraintVertical_bias="0.105" />
 
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:fontFamily="@font/inter_light"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.115" />
 
     <Button
-        android:id="@+id/final_login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="166dp"
-        android:height="37dp"
+        android:id="@+id/final_signup_button"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/inter_bold"
-        android:text="@string/login"
+        android:text="@string/sign_up"
         android:textColor="@color/black"
         android:textSize="14sp"
-
+        android:width="166dp"
+        android:height="37dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.156" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        app:layout_constraintVertical_bias="0.123" />
 
     <TextView
-        android:id="@+id/signupButton"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_light"
-        android:text="@string/don_t_have_an_account_signup"
-        android:textAlignment="textStart"
+        android:text="@string/already_have_an_account_login"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/final_login_button"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintTop_toBottomOf="@+id/final_signup_button"
+        app:layout_constraintVertical_bias="0.236" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

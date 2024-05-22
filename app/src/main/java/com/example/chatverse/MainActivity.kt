@@ -17,7 +17,16 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActitvity", "Trying to show Login activity")
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
-            Log.d("LoginActivity", "login page successfully shown ")
+            Log.d("LoginActivity", "login page successfully shown")
+
+        }
+
+        val signupBtn: Button = findViewById(R.id.signupButton)
+        signupBtn.setOnClickListener{
+            Log.d("MainActivity", "Trying to show signup activity")
+            val intent = Intent(this,SignupActivity::class.java)
+            startActivity(intent)
+            Log.d("SignupActivity","signup page successfully shown")
 
         }
 

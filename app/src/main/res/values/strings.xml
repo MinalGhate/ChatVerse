@@ -9,4 +9,10 @@
     <string name="username_mobile_number">Username / Mobile Number</string>
     <string name="password">Password</string>
     <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
 </resources>
