@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/username_edittext_signup"
         android:layout_width="326dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <EditText
-        android:id="@+id/mobileno"
+        android:id="@+id/mobileno_edittext_signup"
         android:layout_width="326dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -95,11 +95,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username_edittext_signup"
         app:layout_constraintVertical_bias="0.081" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_edittext_signup"
         android:layout_width="326dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -112,11 +112,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mobileno"
+        app:layout_constraintTop_toBottomOf="@+id/mobileno_edittext_signup"
         app:layout_constraintVertical_bias="0.105" />
 
     <EditText
-        android:id="@+id/confirmPassword"
+        android:id="@+id/confirmPassword_edittext_signup"
         android:layout_width="326dp"
         android:layout_height="39dp"
         android:ems="10"
@@ -129,11 +129,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_signup"
         app:layout_constraintVertical_bias="0.115" />
 
     <Button
-        android:id="@+id/final_signup_button"
+        android:id="@+id/signup_button_signup"
         android:layout_width="133dp"
         android:layout_height="46dp"
         android:backgroundTint="@color/white"
@@ -147,11 +147,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword_edittext_signup"
         app:layout_constraintVertical_bias="0.123" />
 
     <TextView
-        android:id="@+id/login_button"
+        android:id="@+id/login_textview_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_light"
@@ -161,7 +161,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/final_signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/signup_button_signup"
         app:layout_constraintVertical_bias="0.236" />
 
 

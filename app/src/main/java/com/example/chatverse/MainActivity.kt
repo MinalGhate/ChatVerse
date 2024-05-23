@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val loginBtn: Button = findViewById(R.id.login_button)
+        val loginBtn: Button = findViewById(R.id.login_button_welcome)
         loginBtn.setOnClickListener{
             Log.d("MainActitvity", "Trying to show Login activity")
             val intent = Intent(this,LoginActivity::class.java)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        val signupBtn: Button = findViewById(R.id.signupButton)
+        val signupBtn: Button = findViewById(R.id.signup_button_welcome)
         signupBtn.setOnClickListener{
             Log.d("MainActivity", "Trying to show signup activity")
             val intent = Intent(this,SignupActivity::class.java)
