@@ -87,7 +87,7 @@
         android:layout_height="39dp"
         android:ems="10"
         android:fontFamily="@font/inter_light"
-        android:hint="@string/mobile_number"
+        android:hint="@string/email"
         android:inputType="text"
         android:textColor="@color/white"
         android:textSize="14sp"

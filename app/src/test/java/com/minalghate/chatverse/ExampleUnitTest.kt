@@ -1,4 +1,4 @@
-package com.example.chatverse
+package com.minalghate.chatverse
 
 import org.junit.Test
 

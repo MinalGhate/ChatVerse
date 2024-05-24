@@ -1,4 +1,4 @@
-package com.example.chatverse
+package com.minalghate.chatverse
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Clicking login button
         val loginBtn: Button = findViewById(R.id.login_button_welcome)
         loginBtn.setOnClickListener{
             Log.d("MainActitvity", "Trying to show Login activity")
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        //Clicking sigup button
         val signupBtn: Button = findViewById(R.id.signup_button_welcome)
         signupBtn.setOnClickListener{
             Log.d("MainActivity", "Trying to show signup activity")

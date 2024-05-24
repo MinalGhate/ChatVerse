@@ -1,6 +1,5 @@
-package com.example.chatverse
+package com.minalghate.chatverse
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +15,7 @@ class SignupActivity: AppCompatActivity() {
 
         setContentView(R.layout.activity_signup);
 
+        //clicking already have an account login
         val login:TextView = findViewById(R.id.login_textview_signup)
         login.setOnClickListener{
             Log.d("SignupActivity","Trying to show login activity")
@@ -24,7 +24,9 @@ class SignupActivity: AppCompatActivity() {
             Log.d("LoginActivity","Login page successfully shown")
         }
 
+        //clicking signup button
         findViewById<Button>(R.id.signup_button_signup).setOnClickListener{
+            //accessing text field information
             val username = findViewById<EditText>(R.id.username_edittext_signup).text.toString()
             val mobileno = findViewById<EditText>(R.id.mobileno_edittext_signup).text.toString()
             val password = findViewById<EditText>(R.id.password_edittext_signup).text.toString()

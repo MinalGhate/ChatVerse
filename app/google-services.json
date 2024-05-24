@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "2705085471",
+    "project_id": "chatverse-65fe4",
+    "storage_bucket": "chatverse-65fe4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2705085471:android:d7af491ad3d73a5304712a",
+        "android_client_info": {
+          "package_name": "com.minalghate.chatverse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArKCeDOqYdc4NID7QE389yBz7D02nbDL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
