@@ -35,31 +35,34 @@ class LoginActivity: AppCompatActivity() {
 
     private fun performLoginRegister() {
         //textfield value accessing
-        val usernameEmail = findViewById<EditText>(R.id.username_edittext_login).text.toString()
-        val password = findViewById<EditText>(R.id.password_edittext_login).text.toString()
+        val email = findViewById<EditText>(R.id.username_edittext_signup).text.toString()
+        val password = findViewById<EditText>(R.id.password_edittext_signup).text.toString()
 
-        if(usernameEmail.isEmpty() || password.isEmpty()){
+        if(email.isEmpty() || password.isEmpty()){
             Toast.makeText(this,"Please enter email and password", Toast.LENGTH_SHORT).show()
             return
         }
 
-        Log.d("LoginActivity", "Username/Mobile Number is: $usernameEmail")
+        Log.d("LoginActivity", "email is: $email")
         Log.d("LoginActivity", "Password is: $password")
 
 
 
         //Firebase authentication
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(usernameEmail,password)
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
             .addOnCompleteListener {
+                //unsuccessful login
                 if(!it.isSuccessful) return@addOnCompleteListener
-                //else if successful
-                Log.d("LoginActivity", "Successfully created user with uid: ${it.result.user?.uid}")
-            }
-            .addOnFailureListener{
-                Log.d("LoginActivity","Failed to create user: ${it.message}")
-                Toast.makeText(this,"Enter correct Email id and password", Toast.LENGTH_SHORT).show()
+                //for successful login
+                Log.d("LoginActivity","Successfully logged in ${it.result.user?.uid}")
+
 
             }
+            .addOnFailureListener{
+                Log.d("LoginActivity","Failed to logging in user ${it.message}")
+                Toast.makeText(this,"Failed to logging in user ${it.message}",Toast.LENGTH_SHORT).show()
+            }
+
 
     }
 

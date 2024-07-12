@@ -21,16 +21,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.092" />
 
+<!--    <Button-->
+<!--        android:id="@+id/selectphoto_button"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:background="@drawable/select_photo_circle"-->
+<!--        android:text="@string/select_photo"-->
+
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/app_name"-->
+<!--        app:layout_constraintVertical_bias="0.043" />-->
+
     <ImageView
-        android:id="@+id/app_logo"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/app_name"
-        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"
         app:srcCompat="@drawable/chatverse_logo" />
 
     <TextView
@@ -82,13 +97,13 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <EditText
-        android:id="@+id/mobileno_edittext_signup"
+        android:id="@+id/email_edittext_signup"
         android:layout_width="326dp"
         android:layout_height="39dp"
         android:ems="10"
         android:fontFamily="@font/inter_light"
         android:hint="@string/email"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mobileno_edittext_signup"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext_signup"
         app:layout_constraintVertical_bias="0.105" />
 
     <EditText

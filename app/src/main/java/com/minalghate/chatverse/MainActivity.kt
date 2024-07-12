@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        //Clicking sigup button
+        //Clicking signup button
         val signupBtn: Button = findViewById(R.id.signup_button_welcome)
         signupBtn.setOnClickListener{
             Log.d("MainActivity", "Trying to show signup activity")
